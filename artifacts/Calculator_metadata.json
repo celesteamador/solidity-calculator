@@ -1,0 +1,242 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "number1",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "number2",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"name": "Addition",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "number1",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "number2",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"name": "Division",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "number1",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "number2",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"name": "Multiplier",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "number1",
+						"type": "int256"
+					},
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "number2",
+						"type": "int256"
+					},
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "result",
+						"type": "int256"
+					}
+				],
+				"name": "Substraction",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2_",
+						"type": "uint256"
+					}
+				],
+				"name": "addition",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "result_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2_",
+						"type": "uint256"
+					}
+				],
+				"name": "division",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "result_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2_",
+						"type": "uint256"
+					}
+				],
+				"name": "multiplier",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "result_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "num1_",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "num2_",
+						"type": "int256"
+					}
+				],
+				"name": "substraction",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "result_",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Calculator/Calculator.sol": "Calculator"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Calculator/Calculator.sol": {
+			"keccak256": "0x5aa126e9ef3f6410aa374b1a54a29e16d66058aeb3d0457696f8e1f04daee7df",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://9eafbe2c081d59d74e1380e697a82a2e04c34c78855e4e2d48c3abb919ba43fe",
+				"dweb:/ipfs/QmRqnsBsH6oiaJkWusWMrbTFq7KZWV2kehxiP4W7vdzNPA"
+			]
+		}
+	},
+	"version": 1
+}

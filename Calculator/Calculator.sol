@@ -11,11 +11,9 @@ contract Calculator {
 
     // Modifiers
     modifier checkMultiplier(uint256 num1_, uint256 num2_) {
-        require(num1_ && num2_ > 0, "The multiplication is equal to 0.");
-        if (num1_ * num2_ = num1_ | num2_) revert("The multiplication is equal to 1.");
+        require(num1_ & num2_ > 0, "The multiplication is equal to 0.");
         _;
     }
-
 
     modifier checkDivision(uint256 num1_, uint256 num2_) {
         require(num2_ > 0, "The denominator ('num2_') must be greater than 0.");
@@ -30,7 +28,7 @@ contract Calculator {
     event Division(uint256 number1, uint256 number2, uint256 result);
 
     // External Functions
-    function addition(uint256 num1_, uint256 num2_) public pure returns(unit256 result_) {
+    function addition(uint256 num1_, uint256 num2_) public returns(uint256 result_) {
         result_ = addition_logic(num1_, num2_);
     }
 
@@ -38,29 +36,36 @@ contract Calculator {
         result_ = substraction_logic(num1_, num2_);
     }
 
-    function multiplier(uint256 num1_, uint256 num2_) public pure returns(uint256 result_) {
+    function multiplier(uint256 num1_, uint256 num2_) public returns(uint256 result_) {
         result_ = multiplier_logic(num1_, num2_);
     }
 
-    function division(uint256 num1_, uint256 num2_) public pure returns(uint256 result_) {
-        result_ = division_logic(num1_, num2);
+    function division(uint256 num1_, uint256 num2_) public returns(uint256 result_) {
+        result_ = division_logic(num1_, num2_);
     }
 
     // Internal Functions
-    function addition_logic(uint256 num1_, uint256 num2) internal pure returns(uint256 result_) {
+    function addition_logic(uint256 num1_, uint256 num2_) internal returns(uint256 result_) {
         result_ = num1_ + num2_;
+        
+        emit Addition(num1_, num2_, result);
     }
 
     function substraction_logic(int256 num1_, int256 num2_) internal pure returns(int256 result_) {
         result_ = num1_ - num2_;
     }
 
-    function multiplier_logic(uint256 num1_, uint256 num2_) internal pure returns(uint256 result_) {
+    function multiplier_logic(uint256 num1_, uint256 num2_) internal checkMultiplier(num1_, num2_) returns(uint256 result_) {
         result_ = num1_ * num2_;
+
+        emit Multiplier(num1_, num2_, result);
     }
 
     function division_logic(uint256 num1_, uint256 num2_) internal checkDivision(num1_, num2_) returns(uint256 result_) {
         result_ = num1_ / num2_;
+
+        emit Division(num1_, num2_, result);
+
     }
 
 
