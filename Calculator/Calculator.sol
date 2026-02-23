@@ -11,7 +11,8 @@ contract Calculator {
 
     // Modifiers
     modifier checkMultiplier(uint256 num1_, uint256 num2_) {
-        require(num1_ & num2_ > 0, "The multiplication is equal to 0.");
+        if (num1_ * num2_ == 0) revert("The multiplication must be greater than 0.");
+        else if (num1_ == 1 || num2_ == 1) revert("One of the multipliers must be greater than 1.");
         _;
     }
 

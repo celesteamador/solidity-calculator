@@ -230,11 +230,11 @@
 	},
 	"sources": {
 		"Calculator/Calculator.sol": {
-			"keccak256": "0x5aa126e9ef3f6410aa374b1a54a29e16d66058aeb3d0457696f8e1f04daee7df",
+			"keccak256": "0x1f20987d2914944e37619a8821a51a7dca9a9198ea9a8218faefa12fe25f5519",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://9eafbe2c081d59d74e1380e697a82a2e04c34c78855e4e2d48c3abb919ba43fe",
-				"dweb:/ipfs/QmRqnsBsH6oiaJkWusWMrbTFq7KZWV2kehxiP4W7vdzNPA"
+				"bzz-raw://8c1bf67460f2fd47274826a865ec518c1c0965cb012868bb4592a9d56f702d56",
+				"dweb:/ipfs/QmQ4BqX5MNz14q3hXsiZAankwdG7joc2ehi6FJeuBLnDDB"
 			]
 		}
 	},
